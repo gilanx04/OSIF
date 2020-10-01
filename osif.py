@@ -1,12 +1,12 @@
 ###################################################################
-#                        Import Module
+#                        Import Modules
 import json , sys , hashlib , os , time , marshal, getpass
 ###################################################################
 '''
      Jangan Direcode ya bosku , tinggal make apa susahnya sih
 '''
 ###################################################################
-#                             COLOR
+#                             COLORS
 if sys.platform in ["linux","linux2"]:
 	W = "\033[0m"
         G = '\033[32;1m'
@@ -16,7 +16,7 @@ else:
 	G = ''
 	R = ''
 ###################################################################
-#                      Exception
+#                      Exceptions
 try:
 	import requests
 except ImportError:
@@ -30,16 +30,16 @@ except ImportError:
 	print "[!] Can't import module 'requests'\n"
 	sys.exit()
 ####################################################################
-#                    Set Default encoding
+#                    Set the Default encoding
 reload (sys)
 sys . setdefaultencoding ( 'utf8' )
 ####################################################################
-#       	        I don't know
+#       	        I don't know haha
 jml = []
 jmlgetdata = []
 n = []
 ####################################################################
-#                        BANNER
+#                        BANNERs
 def baliho():
 	try:
 		token = open('cookie/token.log','r').read()
